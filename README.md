@@ -82,9 +82,7 @@ If you want to run it with the parameter,
 
 $ python main.py re_init
 
-***If in any case, the program is failing to run, please read the last section “Important***
-
-***notes” to look for a potential reason to why this is happening.***
+***If in any case, the program is failing to run, please read the last section [Important Notes](https://github.com/BumbleFlash/profiling_internet_users/tree/master#important-notes) to look for a potential reason to why this is happening.***
 
 ### Workflow Diagram
 
@@ -96,10 +94,10 @@ will show the execution of the code when the project is run with `re_init` argum
 
 **Workflow by points:**
 
-- The python script executes the *sqllite\_core.create\_and\_insert files()* function for all the
+- The python script executes the `sqllite_core.create_and_insert files()` function for all the
 files in the directory when the argument re\_init is passed. This function imports all the data
 into the SQLite database.
-- Once the data is imported, the *delete\_unecessary() and delete\_weekends*() are called to
+- Once the data is imported, the `delete_unecessary()` and `delete_weekends()` are called to
 delete data which is not a weekday and which is not between 8 am to 5 pm for weekdays.
 - Now, for every user, two tables are created for each window. Here each table will consist
 of data of one week. Two tables for each window infers that every user will have 6 tables
